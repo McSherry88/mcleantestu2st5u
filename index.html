@@ -24,43 +24,5 @@
   </a-scene>
 </body>
     
-    <body style="margin: 0; overflow: hidden;">
-        <a-scene
-            embedded
-            loading-screen="enabled: false;"
-            arjs="sourceType: webcam; debugUIEnabled: false;"
-        >
-            <a-assets>
-                <video
-                    src="assets/asset.mp4"
-                    preload="auto"
-                    id="vid"
-                    response-type="arraybuffer"
-                    loop
-                    crossorigin
-                    webkit-playsinline
-                    autoplay
-                    muted
-                    playsinline
-                ></video>
-            </a-assets>
-
-                <a-video
-                    src="#vid"
-                    position='0 0.1 0'
-                    rotation="0 90 0"
-                    look-at="[gps-camera]"
-                    videohandler
-                    smooth="true"
-                    smoothCount="10"
-                    smoothTolerance="0.01"
-                    smoothThreshold="5"
-                    autoplay="true"
-                    scale="2 2 2"
-                    gps-entity-place="latitude: 40.904312; longitude: -73.868213;"
-                ></a-video>
-
-            <a-camera gps-camera rotation-reader></a-camera>
-        </a-scene>
-    </body>
+  
 </html>
